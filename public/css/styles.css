@@ -172,10 +172,3 @@ hero-content {
     border: 1px solid #db7598;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-            
-body {background: black;}
-canvas {display:block;}
