@@ -76,51 +76,6 @@ footer .footer-contents {
   font-weight: bold;
 }
 
-.message {
-  position: relative;
-  padding: 0 5rem;
-  margin-bottom: 3rem;
-  width: auto;
-}
-
-.message .twitter-link {
-  float: left;
-  margin-right: 20px;
-}
-
-.message .twitter-link img {
-  width: 40px;
-  height: 40px;
-}
-
-.message .text {
-  float: left;
-}
-
-.message:after, .website-nav:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-.graphics {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 0;
-}
-
-.graphics .tower svg {
-  width: calc(100vw);
-  height: calc(90vh);
-}
-
-.graphics .cloud {
-  top: 30rem;
-  position: relative;
-}
-
 .page-content {
   padding: 1rem 5rem;
 }
@@ -129,17 +84,8 @@ footer .footer-contents {
   margin-bottom: 1rem;
 }
 
-.path {
-  stroke-dasharray: 4000;
-  stroke-dashoffset: 4000;
-  animation: dash 5s linear forwards;
-}
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+
 
 @media (min-height: 500px) and (min-width: 700px) {
   .message {
@@ -149,25 +95,7 @@ footer .footer-contents {
     top: calc(15vh - 5rem);
   }
 
-  .message .text {
-    padding-right: 0rem;
-  }
-
-  .graphics {
-    display: block;
-    margin-bottom: 6rem;
-  }
-
-  .message .twitter-link img {
-    width: 70%;
-    height: 70%;
-  }
-
-  .page-content {
-    padding: 3rem 5rem;
-  }
 }
-
 @media (min-height: 500px) and (min-width: 1240px) {
   .message {
     left: calc(50vw - 10rem);
@@ -189,3 +117,65 @@ footer .footer-contents {
     display: none;
   }
 }
+
+.hero-matrix {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+hero-content {
+  position: absolute;
+  z-index: 1;
+  left:100px;
+  
+}
+
+.hero-content {
+    position: relative; 
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+
+
+.hero-button {
+    background-color: #ae2d59;
+    color: white;
+    border: 1px solid #cb376a;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.hero-button:hover {
+    background-color: #cb376a;
+    border: 1px solid #db7598;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+            
+body {background: black;}
+canvas {display:block;}
