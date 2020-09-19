@@ -4,11 +4,6 @@ var port = process.env.PORT || 3000,
 
 
 
-app.get('/', (res, req) =>{
-  res.send("Something");
-  console.log("Something");
-});
-
 var app = http.createServer(function (req, res) {
   if (req.url.indexOf('/img') != -1) {
     var filePath = req.url.split('/img')[1];
