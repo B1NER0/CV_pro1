@@ -52,7 +52,7 @@ var mHeight = window.innerHeight;
             //translucent BG to show trail
             ctx.fillStyle = "rgba(15, 20, 15, 0.04)";
             ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
-            ctx.fillStyle = "#00ff00";//green text
+            ctx.fillStyle = "#2472a9";//green text
             ctx.font = font_size + "px arial";
             //looping over drops
             for(var i = 0; i < drops.length; i++)

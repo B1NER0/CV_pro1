@@ -9,7 +9,7 @@ html, body {
 html {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+  font-family: Impact, Charcoal, sans-serif;
   font-size: 62.5%;
   color: white;
   background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%);
@@ -55,7 +55,7 @@ footer .footer-contents {
   padding: 2rem;
   top: 0;
   transition: top 0.3s;
-  background-color: #333;
+  background-color: #FFFFFF; opacity: 0.7; filter: alpha(opacity=50);
 }
 
 .website-nav ul {
@@ -71,7 +71,7 @@ footer .footer-contents {
 }
 
 .website-nav ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -88,9 +88,6 @@ footer .footer-contents {
 }
 
 
-
-
-
 @media (min-aspect-ratio: 11/5)  {
   .graphics {
     display: none;
@@ -99,10 +96,14 @@ footer .footer-contents {
 
 .hero-matrix {
   position: absolute;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  /* Opacity can be given to background with rgba*/
+  border: none;
+  height: 12rem;
+  padding: 3rem;
+  top: 40%;
 }
 
 
@@ -111,36 +112,38 @@ footer .footer-contents {
     position: relative; 
     font-family: "Monserrat", sans-serif;
     color: white;
-    text-align: center;
     margin: 0.625rem;
-    z-index: 1;
-}
-.hero-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 0;
-}
-.hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-top: 1rem;
-}
-
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Opacity can be given to background with rgba*/
+    border: none;
+    height: 100px;
+    align-items: center;
+  }
 
 
 .hero-button {
-    background-color: #ae2d59;
+    background-color: #32a852;
+    position: relative;
     color: white;
-    border: 1px solid #cb376a;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
+    border: 1px solid #32a852;
+    margin-top: 1.3rem;
+    padding: 0.9375rem 1.875rem 1.875rem 1.875rem;
     font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
+    font-size: 2.125rem;
     font-weight: 200;
     cursor: pointer;
+    border-radius: 8px;
 }
 .hero-button:hover {
-    background-color: #cb376a;
-    border: 1px solid #db7598;
+    background-color: #138717;
+    border: 1px solid #138717;
+}
+
+.about{
+  padding-top: 2rem;
+}
+
+#about-head{
+  text-align: center;
 }
 
