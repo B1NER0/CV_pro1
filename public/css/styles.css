@@ -51,8 +51,11 @@ footer .footer-contents {
 }
 
 .website-nav {
-  position: relative;
-  padding: 5rem;
+  position: fixed;
+  padding: 2rem;
+  top: 0;
+  transition: top 0.3s;
+  background-color: #333;
 }
 
 .website-nav ul {
@@ -96,8 +99,7 @@ footer .footer-contents {
 
 .hero-matrix {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,9 +108,8 @@ footer .footer-contents {
 
 
 hero-content {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  left:100px;
   
 }
 
