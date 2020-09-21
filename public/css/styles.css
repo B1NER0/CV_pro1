@@ -75,9 +75,9 @@ p {
 
 
 @media (min-aspect-ratio: 11/5)  {
-  .graphics {
+  /*.graphics {
     display: none;
-  }
+  }*/
 }
 
 .hero-matrix {
@@ -92,22 +92,6 @@ p {
   left: 10%;
   padding: 3rem;
 }
-
-
-
-.hero-content {
-    position: relative; 
-    font-family: "Monserrat", sans-serif;
-    color: white;
-    margin: 0.625rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Opacity can be given to background with rgba*/
-    border: none;
-    height: 100px;
-    align-items: center;
-  }
-
-
 
 
 
@@ -212,3 +196,200 @@ p {
   font-weight: 700;
   
 }
+
+.skills {
+  color: white;
+  justify-content: center;
+  margin-top: 14rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.skills h1 {
+  
+  text-align: center;
+  color: #00a4d6;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+
+.SkillList {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SkillList h2 {
+}
+
+
+.line {
+  height: 25px;
+  min-width: 65%;
+  line-height: 25px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 0 0 10px;
+  position: relative;
+  
+}
+
+.line:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 25px;
+  top: 0;
+  z-index: -2;
+  background: #d2d6d7;
+}
+
+.line:after {
+  content: '';
+  background: #333;
+  height: 25px;
+  transition: 0.8s;
+  display: block;
+  width: 100%;
+  animation: skillAnimate 1 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+
+.line1:after{
+  max-width: 75%;
+}
+
+.line2:after{
+  max-width: 60%;
+}
+
+.line3:after{
+  max-width: 70%;
+}
+
+.line4:after{
+  max-width: 50%;
+}
+
+.line5:after{
+  max-width: 35%;
+}
+
+
+.line6:after{
+  max-width: 30%;
+}
+
+
+.line7:after{
+  max-width: 30%;
+}
+
+
+.line8:after{
+  max-width: 60%;
+}
+
+
+@keyframes skillAnimate {
+  0%{
+    width: 0;
+  }
+  
+  100%{
+    width: 100%;
+  }
+}
+
+#skillHead {
+  
+}
+
+/*
+.skills li {
+  margin: 20px 0;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+
+.html{
+  width: 90%;
+  animation: html 2s;
+}
+
+.css{
+  width: 65%;
+  animation: css 2s;
+}
+
+.jquery{
+  width: 50%;
+  animation: jquery 2s;
+}
+
+.javascript{
+  width: 70%;
+  animation: javascript 2s;
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  
+  100%{
+    width: 65%;
+  }
+}
+
+@keyframes jquery {
+  0%{
+    width: 0%;
+  }
+  
+  100%{
+    width: 50%;
+  }
+}
+
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  
+  100%{
+    width: 70%;
+  }
+}
+*/
