@@ -74,6 +74,14 @@ p {
 }
 
 
+@media (min-aspect-ratio: 11/5)  {
+  .graphics {
+    display: block !important;
+  }
+  
+  
+}
+
 .hero-matrix {
   position: absolute;
   border-radius: 8px;
@@ -151,8 +159,13 @@ p {
 
 
 @media screen and (max-width: 800px) {
+  
+  .graphics {
+    display: block !important;
+  }
+  
   #my-img {
-  width: 50%;
+  width: 40%;
   }
   
   .column-left {
