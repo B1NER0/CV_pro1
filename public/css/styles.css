@@ -78,6 +78,10 @@ p {
   /*.graphics {
     display: none;
   }*/
+  
+   #my-img {
+  width: 40%;
+  }
 }
 
 .hero-matrix {
@@ -127,6 +131,7 @@ p {
 
 #my-img {
   height: auto;
+  position: relative;
 }
 
 #personal {
@@ -155,7 +160,7 @@ p {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   #my-img {
   width: 40%;
   }
@@ -176,6 +181,17 @@ p {
     text-align: center;
   }
   
+  .skills {
+    margin-top: 1rem;
+  }
+  
+  #about-head {
+    padding-bottom: 0rem;
+  }
+  
+  .about {
+    margin-bottom: 1rem;
+  }
   
   
 }
@@ -200,7 +216,7 @@ p {
 .skills {
   color: white;
   justify-content: center;
-  margin-top: 14rem;
+  margin-top: 20rem;
   display: flex;
   flex-flow: column;
 }
@@ -210,7 +226,6 @@ p {
   text-align: center;
   color: #00a4d6;
   font-weight: 700;
-  padding-bottom: 5rem;
 }
 
 .SkillList {
@@ -222,14 +237,16 @@ p {
 }
 
 .SkillList h2 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 
 .line {
   height: 25px;
-  min-width: 65%;
+  min-width: 55%;
   line-height: 25px;
-  font-size: 14px;
+  font-size: 2rem;
   color: #fff;
   padding: 0 0 0 10px;
   position: relative;
@@ -249,7 +266,7 @@ p {
 
 .line:after {
   content: '';
-  background: #333;
+  background: #fff;
   height: 25px;
   transition: 0.8s;
   display: block;
@@ -260,41 +277,51 @@ p {
   left: 0;
   z-index: -1;
   
+  
+  
 }
 
 .line1:after{
-  max-width: 75%;
+  max-width: 80%;
+  background: #ff3c00;
+  
 }
 
 .line2:after{
   max-width: 60%;
+  background: #00bbff;
 }
 
 .line3:after{
   max-width: 70%;
+  background: #ff3c00;
 }
 
 .line4:after{
   max-width: 50%;
+  background: #00bbff;
 }
-
 .line5:after{
   max-width: 35%;
+  background: #ff3c00;
 }
 
 
 .line6:after{
   max-width: 30%;
+  background:#00bbff;
 }
 
 
 .line7:after{
   max-width: 30%;
+  background: #ff3c00;
 }
 
 
 .line8:after{
   max-width: 60%;
+  background: #00bbff;
 }
 
 
@@ -308,88 +335,4 @@ p {
   }
 }
 
-#skillHead {
-  
-}
 
-/*
-.skills li {
-  margin: 20px 0;
-}
-
-.bar {
-  background: #353b48;
-  display: block;
-  height: 2px;
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 0 10px #2187e7b3;
-}
-
-.bar span {
-  height: 2px;
-  float: left;
-  background: #2187e7;
-}
-
-.html{
-  width: 90%;
-  animation: html 2s;
-}
-
-.css{
-  width: 65%;
-  animation: css 2s;
-}
-
-.jquery{
-  width: 50%;
-  animation: jquery 2s;
-}
-
-.javascript{
-  width: 70%;
-  animation: javascript 2s;
-}
-
-@keyframes html {
-  0%{
-    width: 0%;
-  }
-  
-  100%{
-    width: 90%;
-  }
-}
-
-@keyframes css {
-  0%{
-    width: 0%;
-  }
-  
-  100%{
-    width: 65%;
-  }
-}
-
-@keyframes jquery {
-  0%{
-    width: 0%;
-  }
-  
-  100%{
-    width: 50%;
-  }
-}
-
-@keyframes javascript {
-  0%{
-    width: 0%;
-  }
-  
-  100%{
-    width: 70%;
-  }
-}
-*/
