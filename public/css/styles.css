@@ -79,7 +79,9 @@ p {
     display: none;
   }*/
   
-   
+   #my-img {
+  width: 40%;
+  }
 }
 
 .hero-matrix {
@@ -116,7 +118,6 @@ p {
 }
 .about{
   margin: 5rem;
-  display: block;
 }
 
 #about-head{
@@ -146,20 +147,20 @@ p {
 
 .column-left{ 
   float: left;
-  width: 35%;
+  width: 33.3333%;
 }
 .column-right{ 
   float: right;
-  width: 35%;
+  width: 33.3333%;
 }
 .column-center{ 
   display: inline-block; 
-  width: 30%; 
+  width: 33.3333%; 
   text-align: center;
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   #my-img {
   width: 40%;
   }
