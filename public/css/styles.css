@@ -154,10 +154,10 @@ p {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   
   
-  #my-img {
+ .column-center img {
   display: block !important;
   }
   
@@ -177,17 +177,7 @@ p {
     text-align: center;
   }
   
-  .skills {
-    margin-top: 1rem;
-  }
   
-  #about-head {
-    padding-bottom: 0rem;
-  }
-  
-  .about {
-    margin-bottom: 1rem;
-  }
   
   
 }
