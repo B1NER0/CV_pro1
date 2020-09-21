@@ -79,9 +79,7 @@ p {
     display: none;
   }*/
   
-   #my-img {
-  width: 40%;
-  }
+   
 }
 
 .hero-matrix {
@@ -118,6 +116,7 @@ p {
 }
 .about{
   margin: 5rem;
+  display: block;
 }
 
 #about-head{
@@ -160,7 +159,7 @@ p {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
   #my-img {
   width: 40%;
   }
