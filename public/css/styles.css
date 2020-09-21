@@ -71,7 +71,6 @@ p {
 
 
 .page-content p {
-  margin-bottom: 1rem;
 }
 
 
@@ -130,24 +129,20 @@ p {
     border: 1px solid #045894;
 }
 .about{
-  margin: 10rem;
+  margin: 5rem;
 }
 
 #about-head{
   text-align: center;
-  color: #3fe3fc;
-  margin-top: 2rem;
-  font-weight: 500;
+  color: #00a4d6;
+  font-weight: 700;
+  padding-bottom: 5rem;
 }
 
 
 
 #my-img {
-  position: absolute;
-  display: block;
   height: auto;
-  margin-top: 5rem;
-  padding-bottom: 2rem;
 }
 
 #personal {
@@ -163,24 +158,27 @@ p {
 
 .column-left{ 
   float: left;
-  width: 33.333%;
-  padding-right: 2rem;
-  margin-left: 2rem;
+  width: 35%;
 }
 .column-right{ 
   float: right;
-  width: 33.333%;
-  padding-left: 2rem;
+  width: 35%;
 }
 .column-center{ 
   display: inline-block; 
-  width: 33.333%; 
+  width: 30%; 
+  text-align: center;
 }
 
 
-@media screen and (max-width: 600px) {
-  .column-left .column-right .column-center {
+@media screen and (max-width: 1000px) {
+  #my-img {
+  width: 40%;
+  }
+  
+  .column-left {
     width: 100%;
+    
   }
   
   .column-right {
@@ -189,13 +187,12 @@ p {
   
   .column-center {
     width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
   }
   
-  #my-img {
-  position: relative;
-    width: auto;
-  height: auto;
-  }
+  
   
 }
 
