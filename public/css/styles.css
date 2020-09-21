@@ -166,6 +166,7 @@ p {
   
   #my-img {
   width: 40%;
+  display: block !important;
   }
   
   .column-left {
