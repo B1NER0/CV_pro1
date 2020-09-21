@@ -160,7 +160,7 @@ p {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   #my-img {
   width: 40%;
   }
@@ -196,6 +196,9 @@ p {
   
 }
 
+#details h1 {
+  margin-left: 3.5rem;
+}
 
 .detail-list {
   color: black;
@@ -214,7 +217,9 @@ p {
 }
 
 .skills {
+  position: relative;
   color: white;
+  width: 100%;
   justify-content: center;
   margin-top: 20rem;
   display: flex;
