@@ -33,22 +33,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -7rem;
-  position: relative;
-}
 
-footer, .push {
-  height: 7rem;
-}
-
-footer .footer-contents {
-  padding: 0 5rem;
-  position: relative;
-}
 
 .website-nav {
   position: fixed;
@@ -79,9 +64,6 @@ footer .footer-contents {
   font-weight: bold;
 }
 
-.page-content {
-  padding: 1rem 5rem;
-}
 
 .page-content p {
   margin-bottom: 1rem;
@@ -96,14 +78,15 @@ footer .footer-contents {
 
 .hero-matrix {
   position: absolute;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: black;
+  border-radius: 8px;
+  background-color: rgba(000, 000, 000, 0.7);
+  color: white;
   /* Opacity can be given to background with rgba*/
   border: none;
   height: 12rem;
-  padding: 3rem;
   top: 40%;
+  left: 10%;
+  padding: 3rem;
 }
 
 
@@ -121,26 +104,30 @@ footer .footer-contents {
   }
 
 
-.hero-button {
-    background-color: #32a852;
+.hero-button2 {
+    
+}
+
+
+.hero-btn{
+  background-color: #2472a9;
     position: relative;
     color: white;
-    border: 1px solid #32a852;
+    border: 1px solid #2472a9;
     margin-top: 1.3rem;
-    padding: 0.9375rem 1.875rem 1.875rem 1.875rem;
-    font-family: "Monserrat", sans-serif;
-    font-size: 2.125rem;
-    font-weight: 200;
+    padding: 1rem;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
     cursor: pointer;
     border-radius: 8px;
 }
-.hero-button:hover {
-    background-color: #138717;
-    border: 1px solid #138717;
+.hero-btn:hover {
+    background-color: #045894;
+    border: 1px solid #045894;
 }
-
 .about{
-  padding-top: 2rem;
+  
 }
 
 #about-head{

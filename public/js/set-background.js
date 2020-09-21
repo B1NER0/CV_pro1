@@ -50,7 +50,7 @@ var mHeight = window.innerHeight;
         {
             //Black BG for the canvas
             //translucent BG to show trail
-            ctx.fillStyle = "rgba(15, 20, 15, 0.04)";
+            ctx.fillStyle = "rgba(20, 20, 15, 0.04)";
             ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
             ctx.fillStyle = "#2472a9";//green text
             ctx.font = font_size + "px arial";
