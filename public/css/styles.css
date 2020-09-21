@@ -8,11 +8,11 @@ html, body {
 
 html {
   margin: 0;
-  padding: 0;
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;;
   font-size: 62.5%;
   color: white;
-  background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%);
+  /*background: linear-gradient(to bottom, #2473ab 50%,#1e528e 70%,#5b7983 50%);*/
+  background-color: rgba(189, 252, 245, .3);
 }
 
 body {
@@ -21,6 +21,7 @@ body {
 
 h1, h2, h3 {
   font-weight: normal;
+  color: black;
 }
 
 h1 {
@@ -31,6 +32,10 @@ h1 {
 a {
   color: white;
   text-decoration: none;
+}
+
+p {
+  color: black;
 }
 
 
@@ -104,9 +109,7 @@ a {
   }
 
 
-.hero-button2 {
-    
-}
+
 
 
 .hero-btn{
@@ -127,10 +130,88 @@ a {
     border: 1px solid #045894;
 }
 .about{
-  
+  margin: 10rem;
 }
 
 #about-head{
   text-align: center;
+  color: #3fe3fc;
+  margin-top: 2rem;
+  font-weight: 500;
 }
 
+
+
+#my-img {
+  position: absolute;
+  display: block;
+  height: auto;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+#personal {
+  color: black;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-left{ 
+  float: left;
+  width: 33.333%;
+  padding-right: 2rem;
+  margin-left: 2rem;
+}
+.column-right{ 
+  float: right;
+  width: 33.333%;
+  padding-left: 2rem;
+}
+.column-center{ 
+  display: inline-block; 
+  width: 33.333%; 
+}
+
+
+@media screen and (max-width: 600px) {
+  .column-left .column-right .column-center {
+    width: 100%;
+  }
+  
+  .column-right {
+    width: 100%;
+  }
+  
+  .column-center {
+    width: 100%;
+  }
+  
+  #my-img {
+  position: relative;
+    width: auto;
+  height: auto;
+  }
+  
+}
+
+
+.detail-list {
+  color: black;
+  list-style: none;
+}
+
+.detail-list li{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#list-item {
+  color: #00a4d6;
+  font-weight: 700;
+  
+}
