@@ -61,7 +61,10 @@
 
 @media screen and (max-width: 1000px) {
   
-
+    #my-img:before {
+        width: 100px;
+        height: auto;
+    }
   
   .column-left {
     width: 100%;
