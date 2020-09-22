@@ -27,7 +27,7 @@
     
     <canvas id="c"></canvas>
     
-  <section>
+  <section class="about">
         <h1 class="h1">My Profile</h1>
         <div class="rowAbout" id="aboutMe">
         <div  class="column-left" id="personal">
@@ -55,47 +55,69 @@
         </div>
         </div>
         
-        <div>
+        <!--<div>
             <button type="button" class="btn btn-primary">Primary</button>
-        </div>
+        </div> -->
     </section>
     
-    <section class="skills">
-        
-            <h1>Key Skills</h1>
-             
-            <div class="SkillList">
-            <h2 id="skillHead">C#</h2>
-            <div class="line line1">80%</div>
-            
-            <h2 id="skillHead">Java</h2>
-            <div class="line line2">60%</div>
-            
-            <h2 id="skillHead">HTML and CSS</h2>
-            <div class="line line3">70%</div>
-            
-            <h2 id="skillHead">Python</h2>
-            <div class="line line4">50%</div>
-            
-            <h2 id="skillHead">Node.js</h2>
-            <div class="line line5">35%</div>
-            
-            <h2 id="skillHead">Photoshop</h2>
-            <div class="line line6">30%</div>
-            
-            <h2 id="skillHead">Illustrator</h2>
-            <div class="line line7">30%</div>
-            
-            <h2 id="skillHead">WordPress</h2>
-            <div class="line line8">60%</div>
+    <div class="mySkills">
+    <div class="skills">
+        <h1>Key Skills</h1>
+        <div class="skill">
+            <div class="skill-name">C#</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+            </div>
         </div>
-    </section>
+        
+        <div class="skill">
+            <div class="skill-name">HTML and CSS</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="68"></div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="75"></div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <div class="skill-name">WordPress</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="60"></div>
+            </div>
+        </div>
+    </div>
+    </div>
     
 
     <script src="js/set-background.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        $('.skill-per').each(function(){
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per+'%')
+        });
+        
+        $({animatedValue: 0}).animate({animatedValue: per},{
+            duartion: 1000,
+            step: function(){
+                $this.attr('per', Math.floor(this.animatedValue));
+            },
+            complete: function(){
+                $this.attr('per', Math.floor(this.animatedValue));
+            }
+        });
+        
+    </script>
 
 </body>
 
