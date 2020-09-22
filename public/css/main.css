@@ -6,6 +6,7 @@
   text-align: center;
 }
 
+/*
 
 .col {
     max-width: none;
@@ -35,20 +36,48 @@
     float: right;
     position: relative;
 }
+*/
 
-@media (max-width:1200px) {
-    #personal {
-        width: 100%;
-    }
-    
-     #imgMid {
-        width: 100%;
-    }
-    
-     #details {
-        width: 100%;
-    }
+.rowAbout:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
+.column-left{ 
+  float: left;
+  width: 33.3333%;
+}
+.column-right{ 
+  float: right;
+  width: 33.3333%;
+}
+.column-center{ 
+  display: inline-block; 
+  width: 33.3333%; 
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+  
+
+  
+  .column-left {
+    width: 100%;
+    
+  }
+  
+  .column-right {
+    width: 100%;
+  }
+  
+  .column-center {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
 
 #list-item {
   color: #00a4d6;
