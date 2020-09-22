@@ -8,6 +8,7 @@
     <!--<link href="css/styles.css" rel="stylesheet">
     <link href="css/gradients.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet">
     
 </head>
 
@@ -24,21 +25,12 @@
             </nav>
     </header>
     
-    <div class="hero-matrix">
-        
-        <h1>Turning Caffeine into Code is a lifestyle!</h1>
-        <div class="">
-        <button type="button" class="hero-btn"> Get to know me</button>
-        <button type="button" class="hero-btn" style="margin-left: 20px"> Compile</button>
-        </div>
-    </div>
-    
     <canvas id="c"></canvas>
     
-  <section class="about">
-        <h1 id="about-head">My Profile</h1>
-        <table class="row">
-        <div id="personal" class="column-left">
+  <section>
+        <h1 class="h1">My Profile</h1>
+        <div class="row" id="aboutMe">
+        <div  class="col col1" id="personal">
             <h1>About me</h1>
             <p>I am passionate about programming and web development. I have always been fascinated by computers and the use of programming
             to improve the world around me. My studies and practical experience gained by holiday work, 
@@ -46,11 +38,11 @@
             the best possible service. My view of life is guided by Christian values, integrity and accountability. </p>
         </div>
         
-        <div class="column-center">
+        <div class="col col2" id="imgMid">
             <img src="img/me2.png" alt="This is me" id="my-img">
             </div>
         
-        <div id="details" class="column-right">
+        <div id="details" class="col col3">
             <h1>Details</h1>
             
             <ul class="detail-list">
@@ -61,7 +53,7 @@
                 <li><p id="list-item">LinkedIn</p> www.linkedin.com/in/phillip-degenaar</li>
             </ul>
         </div>
-        </table>
+        </div>
         
         <div>
             <button type="button" class="btn btn-primary">Primary</button>

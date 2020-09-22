@@ -1,0 +1,61 @@
+
+.h1 {
+    
+  color: #00a4d6;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.col {
+    max-width: none;
+}
+
+
+#personal {
+    position: relative;
+	width: 33.3333%;
+	
+	float: left;
+}
+
+#imgMid {
+    position: relative;
+    width: 33.3333%;
+    text-align: center;
+    
+}
+
+#my-img {
+  height: auto;
+}
+
+#details {
+    width: 33.3333%;
+    float: right;
+    position: relative;
+}
+
+@media (max-width:1000px) {
+    #personal {
+        width: 100%;
+    }
+    
+     #imgMid {
+        width: 100%;
+    }
+    
+     #details {
+        width: 100%;
+    }
+}
+
+#list-item {
+  color: #00a4d6;
+  font-weight: 700;
+}
+
+.detail-list {
+    list-style: none;
+    padding-left: 0;
+}
